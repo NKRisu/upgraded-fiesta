@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script defer src="/static/indexPage.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Index Page</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/secondIndexPage">Second Index Page</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>This is the main content area of the Index Page. Add your content here.</p>
+        <div class="container">
+            <p>This is the main content area of the Index Page within a container. Add your containerized content in here.</p>
+        </div>
+        <div>
+            <input type="checkbox" id="TestCheckBox" name="CheckBox">
+            <label for="TestCheckBox">Check me!:</label>
+            <p id="checkboxMessage" style="display: none;">Checkbox is checked!</p>
+        </div>
+        <!-- Placeholders for API data, to be moved to containers and made pretty and parsed etc. -->
+        <div id="apiData">
+            <h2>Electricity Data</h2>
+            <p id="healthStatus">Checking API health status...</p>
+            <p id="windPowerData">Loading wind power production data...</p>
+            <p id="consumptionData">Loading electricity consumption data...</p>
+            <p id="productionData">Loading electricity production data...</p>
+            <p id="forecastData">Loading forecast data...</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; NKRisu on GitHub 2025</p>
+    </footer>
+</body>
+</html>
