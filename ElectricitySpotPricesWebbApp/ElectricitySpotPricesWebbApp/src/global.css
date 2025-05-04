@@ -1,0 +1,116 @@
+/* Basic body stuff, the font changing may be funky and you may need to download font families locally and refer the route here. */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container styling, mess with the settings, ctrl + S to save the file and reload webpage locally to see what changed. */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Navigation styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Header styling */
+h2 {
+    flex-basis: 20%;
+    margin-right: -5.5rem;
+}
+
+/* Button styling */
+button {
+    width: 200px;
+    height: 30px;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #e20e49;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e20e4a9f;
+}
+
+/* Cool stuff you can do, such as custom checkboxes like this one */
+input[type="checkbox"] {
+    display: none;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    line-height: 24px;
+    margin-bottom: 2.2rem;
+}
+
+input[type="checkbox"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background: white;
+}
+
+input[type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    font-size: 40px;
+    color: #e20e49;
+}

@@ -1,0 +1,26 @@
+/* Container for the health status */
+.health-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Base style for the status circle */
+  .status-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Green glowing circle for healthy status */
+  .healthy {
+    background-color: #4caf50;
+    box-shadow: 0 0 10px 2px #4caf50;
+  }
+  
+  /* Red circle for unhealthy status */
+  .unhealthy {
+    background-color: #f44336;
+    box-shadow: 0 0 10px 2px #f44336;
+  }
