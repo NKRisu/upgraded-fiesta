@@ -6,7 +6,7 @@ function DatasetCard({ title, datasetId, isForecast = false, isHealthCheck = fal
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const apiKey = 'fdc7d0fc61eb47bbb5e6ad1c2f69fd66'; // Replace with your API key
+  const apiKey = '12345678901234567890'; // Replace with your API key
   useEffect(() => {
     const fetchData = async (retryCount = 0) => {
       try {
