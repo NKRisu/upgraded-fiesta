@@ -1,19 +1,38 @@
-/* Basic body stuff, the font changing may be funky and you may need to download font families locally and refer the route here. */
+/* Center and widen the main content */
+main {
+    padding-bottom: 150px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the main content horizontally */
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    margin: 0;
+    padding: 0;
+    display: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Container styling, mess with the settings, ctrl + S to save the file and reload webpage locally to see what changed. */
 .container {
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 1200px;
+    margin: center; /* Center the container horizontally */
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
 }
 
 /* Header styling */
@@ -47,17 +66,9 @@ nav ul li a:hover {
     background-color: #4CAF50;
 }
 
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
-}
-
 /* Header styling */
 h2 {
-    flex-basis: 20%;
+    flex-basis: 100%;
     margin-right: -5.5rem;
 }
 
@@ -113,4 +124,11 @@ input[type="checkbox"]:checked + label:after {
     top: 3px;
     font-size: 40px;
     color: #e20e49;
+}
+
+@media (max-width: 768px) {
+    .container, main {
+        max-width: 95%; /* Use almost full width on smaller screens */
+        padding: 10px;
+    }
 }
