@@ -15,7 +15,7 @@ This project is a web application designed to display electricity spot prices in
 
 ## Technologies Used
 
-- **Frontend**: React.js, HTML, CSS, JavaScript
+- **Frontend and backend**: React.js, HTML, CSS, JavaScript
 - **Charts**: `react-chartjs-2` and `chart.js`
 - **Backend**: Fingrid's APIs (via proxy configuration in Vite)
 - **Build Tool**: Vite
